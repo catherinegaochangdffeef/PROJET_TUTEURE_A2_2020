@@ -3,26 +3,45 @@
 <head>
     <meta charset="utf-8">
     <title>Dépot du CV</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <label>Déposer votre CV ici : </label><br />
-    <form id="upload-form" action="upload.php" methode="post" enctype="multipart/form-date">
-        <input type="file" id="upload" name="upload" /><br /><br />
+    <br /><br /><br />
+    <div class="container">
+        <div class="jumbotron">
+            <main class="form-signin text-center">
+                <form>
+                    <h1 class=" h3 mb-3 fw-normal">Déposer votre CV ici : </h1><br />
+                    <form id="upload-form" action="upload.php" methode="post" enctype="multipart/form-date">
+                        <input type="file" id="upload" name="upload" /><br /><br />
 
 
-    </form>
+                    </form>
 
 
 
-    <label>Entrer votre adresse mail : </label>
-    <textarea style="width:300px;height:20px;" name='text' value="" required="required"
-        placeholder="           saisir votre adresse mail"></textarea><br /><br />
-    <input type='submit' value="valider " onclick="window.location.replace('index.html')"></input><br /><br />
-
+                    <label class="text-dark">Entrer votre adresse mail : </label>
+                    <textarea style="width:300px;height:30px;" name='text' value="" required="required"
+                        placeholder="           saisir votre adresse mail"></textarea><br /><br />
+                    <input class=" btn btn-lg btn-primary bouton1" type='submit' value="valider "
+                        onclick="window.location.replace('index.html')"></input><br /><br />
+                </form>
+            </main>
+        </div>
+    </div>
 </body>
-<footer>
-    <p>©2020 Projet tutoré DUT Informatique</p>
+
+
+<footer class="footer fixed-bottom mt-auto py-5 bg-dark text-center">
+    <div class="container">
+        <span class="m-0 text-white">Projet tutoré réalisé par GAO Chang, MARSAL Rémi, MORIZE Vincent et RAHUEL
+            Victor</span><br />
+        <span class="m-0 text-white">Etudiants en 2e année à l'IUT de Metz, Janvier 2021</span>
+    </div>
 </footer>
+
 
 </html>

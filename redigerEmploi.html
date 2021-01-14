@@ -3,25 +3,45 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <title>Rédiger</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 
 <body>
+    <br /><br /><br />
+    <div class="container">
+        <div class="jumbotron">
+            <main class="form-signin text-center">
+                <form>
+                    <h1 class=" h3 mb-3 fw-normal">Rédiger une nouvelle offre d'emploi</h1>
+                    <br /><br /><br />
 
-    <h2>Rédiger une nouvelle offre d'emploi</h2>
-    <label>Intitulé : </label>
-    <textarea style="width:200px;height:20px;" name='text' value="" required="required"
-        placeholder="           "></textarea><br /><br />
-    <label>Description : </label>
-    <textarea style="width:300px;height:200px;" name='text' value="" required="required"
-        placeholder="           "></textarea><br /><br />
-    <label>Mots clés: </label>
-    <textarea style="width:200px;height:20px;" name='text' value="" required="required"
-        placeholder="           "></textarea><br /><br />
-    <input type='submit' value="valider " onclick="window.location.replace('pageRH.html')"></input>
-    <input type='submit' value="annuler " onclick="window.location.replace('pageRH.html')"></input><br /><br />
+                    <label>Intitulé  </label><br />
+            
+                    <textarea style="width:200px;height:20px;" name='text' value="" required="required"
+                        placeholder="           "></textarea><br /><br />
+                    <label>Description  </label><br />
+                    <textarea style="width:300px;height:200px;" name='text' value="" required="required"
+                        placeholder="           "></textarea><br /><br />
+                    <label>Mots clés </label><br />
+                    <textarea style="width:400px;height:50px;" name='text' value="" required="required"
+                        placeholder="           "></textarea><br /><br />
+                    <input class=" btn  btn-primary bouton1" type='submit' value="valider " onclick="window.location.replace('pageRH.html')"></input>
+                    <input class=" btn  btn-primary bouton1" type='submit' value="annuler "
+                        onclick="window.location.replace('pageRH.html')"></input><br /><br />
 
+                </form>
+            </main>
+        </div>
     </div>
 </body>
+<footer class="footer  mt-auto py-5 bg-dark text-center">
+    <div class="container">
+        <span class="m-0 text-white">Projet tutoré réalisé par GAO Chang, MARSAL Rémi, MORIZE Vincent et RAHUEL
+            Victor</span><br />
+        <span class="m-0 text-white">Etudiants en 2e année à l'IUT de Metz, Janvier 2021</span>
+    </div>
+</footer>
 
 </html>
