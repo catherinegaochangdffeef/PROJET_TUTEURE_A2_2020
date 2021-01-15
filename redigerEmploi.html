@@ -13,21 +13,21 @@
     <div class="container">
         <div class="jumbotron">
             <main class="form-signin text-center">
-                <form>
-                    <h1 class=" h3 mb-3 fw-normal">Rédiger une nouvelle offre d'emploi</h1>
+                <form method="POST" action="redigerEmploi.php" enctype="multipart/form-data" >
+                    <h1 class=" h3 mb-3 fw-normal">Rédiger une nouvelle offre d'emploi </h1>
                     <br /><br /><br />
 
                     <label>Intitulé  </label><br />
             
-                    <textarea style="width:200px;height:20px;" name='text' value="" required="required"
+                    <textarea style="width:200px;height:20px;" name='intitule' value="" required="required"
                         placeholder="           "></textarea><br /><br />
                     <label>Description  </label><br />
-                    <textarea style="width:300px;height:200px;" name='text' value="" required="required"
+                    <textarea style="width:300px;height:200px;" name='description' value="" required="required"
                         placeholder="           "></textarea><br /><br />
                     <label>Mots clés </label><br />
-                    <textarea style="width:400px;height:50px;" name='text' value="" required="required"
+                    <textarea style="width:400px;height:50px;" name='motCle' value="" required="required"
                         placeholder="           "></textarea><br /><br />
-                    <input class=" btn  btn-primary bouton1" type='submit' value="valider " onclick="window.location.replace('pageRH.html')"></input>
+                    <input class=" btn  btn-primary bouton1" type='submit' value="valider "></input>
                     <input class=" btn  btn-primary bouton1" type='submit' value="annuler "
                         onclick="window.location.replace('pageRH.html')"></input><br /><br />
 
